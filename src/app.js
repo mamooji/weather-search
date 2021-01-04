@@ -14,6 +14,7 @@ const __dirname = dirname(__filename);
 
 //initilization
 const app = express();
+const port = process.env.PORT || 3000;
 
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -105,6 +106,6 @@ app.get("*", (req, res) => {
 });
 
 //server startup
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+app.listen(port, () => {
+  console.log("Server is up on port " + port);
 });

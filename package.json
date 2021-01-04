@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwind build src/styles.css -o public/css/styles.css"
+    "build-css": "tailwind build src/styles.css -o public/css/styles.css",
+    "start": "node src/app.js"
   },
   "type": "module",
   "keywords": [],
