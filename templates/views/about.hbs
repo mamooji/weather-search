@@ -13,7 +13,30 @@
     <div class="relative min-h-screen ">
         {{>header}}
         <div class="pb-16">
-            <img class="w-60" src="/img/image.png" alt="site master" />
+            <div class="flex flex-col items-center px-2 ">
+                <img class="w-60" src="/img/image.png" alt="site master" />
+                <p class=" text-center">This site was created by
+
+                    <a class="font-normal rounded hover:text-blue-400 " href="https://www.mamooji.ca"
+                        rel="noopener noreferrer" target="_blank">
+                        Muhammad Mamooji
+                    </a>
+                    <br>
+
+                    It gets data from
+
+                    <a class="font-normal rounded hover:text-blue-400 " href="https://www.mapbox.com"
+                        rel="noopener noreferrer" target="_blank">
+                        mapbox.com
+                    </a>
+                    and
+                    <a class="font-normal rounded hover:text-blue-400 " href="https://www.weatherstack.com"
+                        rel="noopener noreferrer" target="_blank">
+                        weatherstack.com
+                    </a>
+                </p>
+
+            </div>
         </div>
         {{>footer}}
     </div>
