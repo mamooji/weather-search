@@ -32,7 +32,7 @@ app.use(express.static(publicDirectoryPath));
 //routes
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weather",
+    title: "Weather Search",
     name: "Muhammad Mamooji",
   });
 });
