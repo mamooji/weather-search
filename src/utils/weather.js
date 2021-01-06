@@ -16,15 +16,11 @@ const weather = (lat, long, callback) => {
         const temp = response.data.current.temperature;
         const feelsLike = response.data.current.feelslike;
         const desc = response.data.current.weather_descriptions[0];
-        callback(
-          undefined,
-          desc +
-            ". It is currently " +
-            temp +
-            " degrees out, but it feels like " +
-            feelsLike +
-            "."
-        );
+        callback(undefined, {
+          description: desc,
+          temperature: temp,
+          feel: feelsLike,
+        });
       }
     })
     .catch((error) => {
