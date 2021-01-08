@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-css": "tailwind build src/styles.css -o public/css/styles.css",
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "type": "module",
   "keywords": [],
@@ -18,5 +19,8 @@
     "hbs": "^4.1.1",
     "postcss": "^8.2.2",
     "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.0"
   }
 }
